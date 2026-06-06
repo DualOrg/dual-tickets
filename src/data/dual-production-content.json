@@ -12,7 +12,17 @@
     "slug": "io.dual.examples.ticket.production.v1",
     "name": "DUAL Event Ticket Production v1",
     "description": "Production ticket objects for the official DUAL Event Ticketing example.",
-    "actions": ["issue", "scan", "redeem", "transfer", "resell"]
+    "actions": [
+      "issue",
+      "scan",
+      "redeem",
+      "transfer",
+      "resell"
+    ],
+    "id": "6a23ac54e50cc49e61b04be2",
+    "live": true,
+    "readbackVerified": true,
+    "mintedAt": "2026-06-06T05:13:14.222Z"
   },
   "objects": [
     {
@@ -20,7 +30,9 @@
       "metadata": {
         "name": "Sydney Harbour NYE 2026 - VIP Deck",
         "description": "VIP tokenised access for the Sydney Harbour New Year's Eve 2026 waterfront deck.",
-        "image": { "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80" }
+        "image": {
+          "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80"
+        }
       },
       "custom": {
         "name": "Sydney Harbour NYE 2026 - VIP Deck",
@@ -39,9 +51,22 @@
         "ticketStatus": "valid",
         "description": "VIP deck access with transfer, scan, and resale cap policy prepared for DUAL mainnet.",
         "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
-        "perks": ["waterfront deck", "priority entry", "resale cap", "collector badge"],
+        "perks": [
+          "waterfront deck",
+          "priority entry",
+          "resale cap",
+          "collector badge"
+        ],
         "liveContentId": "dual-ticket-sydney-harbour-nye-2026-vip",
         "contentVersion": "2026-06-mainnet-content-v1"
+      },
+      "dual": {
+        "templateId": "6a23ac54e50cc49e61b04be2",
+        "objectId": "6a23ac58e50cc49e61b04be4",
+        "stateHash": "0x6f74e19d449d163ed6762205453d414c61c2251457de8e692f051dcf715b8314",
+        "integrityHash": "0xf2ab85085ad4cb48cb0ca27e08ace11b0fed6548928c034468ca3d1659ef634e",
+        "readbackVerified": true,
+        "mintedAt": "2026-06-06T05:13:14.222Z"
       }
     },
     {
@@ -49,7 +74,9 @@
       "metadata": {
         "name": "Sydney Opera House Luminous Nights - Premium",
         "description": "Premium tokenised concert ticket with lifecycle verification.",
-        "image": { "url": "https://images.unsplash.com/photo-1523059623039-a9ed027e7fad?w=1200&q=80" }
+        "image": {
+          "url": "https://images.unsplash.com/photo-1523059623039-a9ed027e7fad?w=1200&q=80"
+        }
       },
       "custom": {
         "name": "Sydney Opera House Luminous Nights - Premium",
@@ -68,9 +95,21 @@
         "ticketStatus": "valid",
         "description": "Premium concert access with DUAL scan, redeem, transfer, and provenance policy.",
         "imageUrl": "https://images.unsplash.com/photo-1523059623039-a9ed027e7fad?w=1200&q=80",
-        "perks": ["premium seating", "verified QR", "collector artwork"],
+        "perks": [
+          "premium seating",
+          "verified QR",
+          "collector artwork"
+        ],
         "liveContentId": "dual-ticket-opera-house-luminous-2026-premium",
         "contentVersion": "2026-06-mainnet-content-v1"
+      },
+      "dual": {
+        "templateId": "6a23ac54e50cc49e61b04be2",
+        "objectId": "6a23ac5ae50cc49e61b04bea",
+        "stateHash": "0x2d882eacabfd74692e8aeb999a50f3c4bdf3b2d34716faa6c951d0bd26e21326",
+        "integrityHash": "0xf3e5d1d27a795d2d3ed211b9ff55955c89fa63101378fb08c45134ecb3895186",
+        "readbackVerified": true,
+        "mintedAt": "2026-06-06T05:13:14.222Z"
       }
     },
     {
@@ -78,7 +117,9 @@
       "metadata": {
         "name": "UEFA Champions League Final 2026 - General",
         "description": "General admission tokenised sports ticket with anti-scalp controls.",
-        "image": { "url": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=1200&q=80" }
+        "image": {
+          "url": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=1200&q=80"
+        }
       },
       "custom": {
         "name": "UEFA Champions League Final 2026 - General",
@@ -97,9 +138,21 @@
         "ticketStatus": "valid",
         "description": "Sports ticket object prepared for issue, scan, redeem, and capped resale on DUAL.",
         "imageUrl": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=1200&q=80",
-        "perks": ["stadium entry", "anti-scalp policy", "transfer history"],
+        "perks": [
+          "stadium entry",
+          "anti-scalp policy",
+          "transfer history"
+        ],
         "liveContentId": "dual-ticket-champions-final-2026-general",
         "contentVersion": "2026-06-mainnet-content-v1"
+      },
+      "dual": {
+        "templateId": "6a23ac54e50cc49e61b04be2",
+        "objectId": "6a23ac5ce50cc49e61b04bf0",
+        "stateHash": "0x2f8c0fa0b674991f6c44918e0c884fd3edfc19792d70fb1305238ddafa3fb0a9",
+        "integrityHash": "0xbde7bd1b3d5463735abce34ee84111d012c49868777c0f34910ac0aec651cf6c",
+        "readbackVerified": true,
+        "mintedAt": "2026-06-06T05:13:14.222Z"
       }
     },
     {
@@ -107,7 +160,9 @@
       "metadata": {
         "name": "Art Basel Miami 2026 - Collector Preview",
         "description": "Collector preview access for a tokenised cultural event.",
-        "image": { "url": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1200&q=80" }
+        "image": {
+          "url": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1200&q=80"
+        }
       },
       "custom": {
         "name": "Art Basel Miami 2026 - Collector Preview",
@@ -126,9 +181,21 @@
         "ticketStatus": "valid",
         "description": "High-value collector access with ticket provenance and resale policy.",
         "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1200&q=80",
-        "perks": ["collector preview", "artist reception", "redeemable badge"],
+        "perks": [
+          "collector preview",
+          "artist reception",
+          "redeemable badge"
+        ],
         "liveContentId": "dual-ticket-art-basel-miami-2026-backstage",
         "contentVersion": "2026-06-mainnet-content-v1"
+      },
+      "dual": {
+        "templateId": "6a23ac54e50cc49e61b04be2",
+        "objectId": "6a23ac5de50cc49e61b04bf6",
+        "stateHash": "0x14d0823d9a147e548d870277f3e9ead8f9f712e3fe760cb70481561323b96321",
+        "integrityHash": "0x0de079d1fe866736b0e1af87a83cfe77c374b1ef4f38a4b6034ec081edce54e3",
+        "readbackVerified": true,
+        "mintedAt": "2026-06-06T05:13:14.222Z"
       }
     }
   ]
