@@ -1,0 +1,135 @@
+{
+  "app": "dual-tickets",
+  "version": "2026-06-mainnet-content-v1",
+  "updatedAt": "2026-06-06T00:00:00.000Z",
+  "network": {
+    "target": "mainnet",
+    "apiUrl": "https://api.dual.network/",
+    "orgId": "6a1a927534603174374c8ecf"
+  },
+  "template": {
+    "env": "DUAL_TICKETS_TEMPLATE_ID",
+    "slug": "io.dual.examples.ticket.production.v1",
+    "name": "DUAL Event Ticket Production v1",
+    "description": "Production ticket objects for the official DUAL Event Ticketing example.",
+    "actions": ["issue", "scan", "redeem", "transfer", "resell"]
+  },
+  "objects": [
+    {
+      "contentId": "dual-ticket-sydney-harbour-nye-2026-vip",
+      "metadata": {
+        "name": "Sydney Harbour NYE 2026 - VIP Deck",
+        "description": "VIP tokenised access for the Sydney Harbour New Year's Eve 2026 waterfront deck.",
+        "image": { "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80" }
+      },
+      "custom": {
+        "name": "Sydney Harbour NYE 2026 - VIP Deck",
+        "eventName": "Sydney Harbour NYE 2026",
+        "eventDate": "2026-12-31",
+        "eventTime": "20:00",
+        "venue": "Sydney Harbour Bridge",
+        "venueAddress": "Circular Quay, Sydney NSW",
+        "category": "festival",
+        "tier": "vip",
+        "section": "Deck A",
+        "seat": "VIP-014",
+        "price": 950,
+        "originalPrice": 950,
+        "maxResalePrice": 1140,
+        "ticketStatus": "valid",
+        "description": "VIP deck access with transfer, scan, and resale cap policy prepared for DUAL mainnet.",
+        "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
+        "perks": ["waterfront deck", "priority entry", "resale cap", "collector badge"],
+        "liveContentId": "dual-ticket-sydney-harbour-nye-2026-vip",
+        "contentVersion": "2026-06-mainnet-content-v1"
+      }
+    },
+    {
+      "contentId": "dual-ticket-opera-house-luminous-2026-premium",
+      "metadata": {
+        "name": "Sydney Opera House Luminous Nights - Premium",
+        "description": "Premium tokenised concert ticket with lifecycle verification.",
+        "image": { "url": "https://images.unsplash.com/photo-1523059623039-a9ed027e7fad?w=1200&q=80" }
+      },
+      "custom": {
+        "name": "Sydney Opera House Luminous Nights - Premium",
+        "eventName": "Sydney Opera House - Luminous Nights Concert",
+        "eventDate": "2026-09-18",
+        "eventTime": "19:30",
+        "venue": "Sydney Opera House",
+        "venueAddress": "Bennelong Point, Sydney NSW",
+        "category": "concert",
+        "tier": "premium",
+        "section": "Circle",
+        "seat": "C-22",
+        "price": 420,
+        "originalPrice": 420,
+        "maxResalePrice": 504,
+        "ticketStatus": "valid",
+        "description": "Premium concert access with DUAL scan, redeem, transfer, and provenance policy.",
+        "imageUrl": "https://images.unsplash.com/photo-1523059623039-a9ed027e7fad?w=1200&q=80",
+        "perks": ["premium seating", "verified QR", "collector artwork"],
+        "liveContentId": "dual-ticket-opera-house-luminous-2026-premium",
+        "contentVersion": "2026-06-mainnet-content-v1"
+      }
+    },
+    {
+      "contentId": "dual-ticket-champions-final-2026-general",
+      "metadata": {
+        "name": "UEFA Champions League Final 2026 - General",
+        "description": "General admission tokenised sports ticket with anti-scalp controls.",
+        "image": { "url": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=1200&q=80" }
+      },
+      "custom": {
+        "name": "UEFA Champions League Final 2026 - General",
+        "eventName": "UEFA Champions League Final 2026",
+        "eventDate": "2026-05-30",
+        "eventTime": "21:00",
+        "venue": "Allianz Arena, Munich",
+        "venueAddress": "Werner-Heisenberg-Allee 25, Munich",
+        "category": "sports",
+        "tier": "general",
+        "section": "North Stand",
+        "seat": "N-114-08",
+        "price": 310,
+        "originalPrice": 310,
+        "maxResalePrice": 372,
+        "ticketStatus": "valid",
+        "description": "Sports ticket object prepared for issue, scan, redeem, and capped resale on DUAL.",
+        "imageUrl": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=1200&q=80",
+        "perks": ["stadium entry", "anti-scalp policy", "transfer history"],
+        "liveContentId": "dual-ticket-champions-final-2026-general",
+        "contentVersion": "2026-06-mainnet-content-v1"
+      }
+    },
+    {
+      "contentId": "dual-ticket-art-basel-miami-2026-backstage",
+      "metadata": {
+        "name": "Art Basel Miami 2026 - Collector Preview",
+        "description": "Collector preview access for a tokenised cultural event.",
+        "image": { "url": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1200&q=80" }
+      },
+      "custom": {
+        "name": "Art Basel Miami 2026 - Collector Preview",
+        "eventName": "Art Basel Miami Beach 2026",
+        "eventDate": "2026-12-04",
+        "eventTime": "16:00",
+        "venue": "Miami Beach Convention Center",
+        "venueAddress": "1901 Convention Center Dr, Miami Beach",
+        "category": "exhibition",
+        "tier": "backstage",
+        "section": "Collector Preview",
+        "seat": "CP-009",
+        "price": 1250,
+        "originalPrice": 1250,
+        "maxResalePrice": 1500,
+        "ticketStatus": "valid",
+        "description": "High-value collector access with ticket provenance and resale policy.",
+        "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1200&q=80",
+        "perks": ["collector preview", "artist reception", "redeemable badge"],
+        "liveContentId": "dual-ticket-art-basel-miami-2026-backstage",
+        "contentVersion": "2026-06-mainnet-content-v1"
+      }
+    }
+  ]
+}

@@ -18,6 +18,7 @@ import type {
   PropertyType,
 } from "@/types/dual";
 import { isDualConfigured, getDualClient } from "./dual-client";
+import { getProductionTickets } from "./production-content";
 import { v4 as uuidv4 } from "uuid";
 
 // ─── Blockscout Resolver ───
@@ -468,6 +469,11 @@ class DualDataProvider implements DataProvider {
   }
 
   async listTickets(): Promise<Ticket[]> {
+    const fallbackTickets = getProductionTickets();
+    if (!isDualConfigured() || !process.env.DUAL_TICKETS_TEMPLATE_ID) {
+      return fallbackTickets;
+    }
+
     try {
       const client = getDualClient();
       const templateId = process.env.DUAL_TICKETS_TEMPLATE_ID;
@@ -497,18 +503,23 @@ class DualDataProvider implements DataProvider {
         }
       } catch { /* Blockscout enrichment failed */ }
 
-      return tickets;
+      return tickets.length > 0 ? tickets : fallbackTickets;
     } catch (err) {
       console.error('Failed to list tickets:', err);
-      return [];
+      return fallbackTickets;
     }
   }
 
   async getTicket(id: string): Promise<Ticket | null> {
+    const fallback = getProductionTickets().find((ticket) => ticket.id === id || ticket.objectId === id);
+    if (!isDualConfigured() || !process.env.DUAL_TICKETS_TEMPLATE_ID) {
+      return fallback || null;
+    }
+
     try {
       const client = getDualClient();
       const obj = await client.objects.getObject(id);
-      if (!obj) return null;
+      if (!obj) return fallback || null;
       const ticket = mapGatewayToTicket(obj);
       // Resolve Blockscout links
       try {
@@ -528,7 +539,7 @@ class DualDataProvider implements DataProvider {
       } catch { /* Blockscout enrichment failed */ }
       return ticket;
     } catch {
-      return null;
+      return fallback || null;
     }
   }
 
