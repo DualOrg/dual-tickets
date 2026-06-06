@@ -410,7 +410,7 @@ export default function EventDetailPage({
                     ...prev,
                     isLive: true,
                     blockchainTxHash: ticket.blockchainTxHash,
-                    explorerUrl: ticket.explorerLinks?.integrityHash || ticket.explorerLinks?.contentHash || `https://32f.blockv.io/token/0x41Cf00E593c5623B00F812bC70Ee1A737C5aFF06`,
+                    explorerUrl: ticket.explorerLinks?.integrityHash || ticket.explorerLinks?.contentHash || `https://blockscout.dual.network/token/0x41Cf00E593c5623B00F812bC70Ee1A737C5aFF06`,
                   }
                 : null
             )
@@ -440,7 +440,7 @@ export default function EventDetailPage({
               priceCeiling: td.maxResalePrice || td.price || 0,
               isLive: true,
               blockchainTxHash: ticket.blockchainTxHash,
-              explorerUrl: ticket.explorerLinks?.integrityHash || ticket.explorerLinks?.contentHash || `https://32f.blockv.io/token/0x41Cf00E593c5623B00F812bC70Ee1A737C5aFF06`,
+              explorerUrl: ticket.explorerLinks?.integrityHash || ticket.explorerLinks?.contentHash || `https://blockscout.dual.network/token/0x41Cf00E593c5623B00F812bC70Ee1A737C5aFF06`,
             })
           }
         }
@@ -1070,7 +1070,7 @@ export default function EventDetailPage({
                   </div>
                 )}
                 <div className="flex gap-3">
-                  <a href={event?.explorerUrl || `https://32f.blockv.io/token/0x41Cf00E593c5623B00F812bC70Ee1A737C5aFF06`} target="_blank" rel="noopener noreferrer" className="flex-1 py-3 border border-[#39ff14]/30 text-[#39ff14] font-bold hover:bg-[#39ff14]/10 transition-all text-center text-sm">View on Blockscout</a>
+                  <a href={event?.explorerUrl || `https://blockscout.dual.network/token/0x41Cf00E593c5623B00F812bC70Ee1A737C5aFF06`} target="_blank" rel="noopener noreferrer" className="flex-1 py-3 border border-[#39ff14]/30 text-[#39ff14] font-bold hover:bg-[#39ff14]/10 transition-all text-center text-sm">View on Blockscout</a>
                   <Link href="/my-tickets" className="flex-1 py-3 bg-[#39ff14] text-black font-headline uppercase tracking-widest hover:shadow-[0_0_20px_rgba(57,255,20,0.5)] transition-all text-center text-sm">View My Tickets</Link>
                 </div>
               </div>

@@ -4,7 +4,7 @@ import { getDataProvider } from "@/lib/data-provider";
 
 export const dynamic = "force-dynamic";
 
-const BASE_URL = process.env.NEXT_PUBLIC_DUAL_API_URL || 'https://gateway-48587430648.europe-west6.run.app';
+const BASE_URL = process.env.NEXT_PUBLIC_DUAL_API_URL || 'https://api.dual.network/';
 const API_KEY = process.env.DUAL_API_KEY || '';
 
 /**

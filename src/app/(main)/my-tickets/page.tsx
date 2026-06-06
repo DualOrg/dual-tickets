@@ -25,7 +25,7 @@ interface Ticket {
 }
 
 const DUAL_CONTRACT = '0x41Cf00E593c5623B00F812bC70Ee1A737C5aFF06'
-const BLOCKSCOUT = 'https://32f.blockv.io'
+const BLOCKSCOUT = 'https://blockscout.dual.network'
 
 export default function MyTicketsPage() {
   const [flipped, setFlipped] = useState<Record<string, boolean>>({})
